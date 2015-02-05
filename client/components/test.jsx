@@ -1,11 +1,10 @@
-var Paragraph = require('./paragraph.jsx')
+var TextForm = require('./text_form.jsx')
 
 var Test = React.createClass({
     render: function() {
         return(
             <div>
-                This is the Test Component
-                <Paragraph pText="this is some text"/>
+                <TextForm/>
             </div>
         )
     }
