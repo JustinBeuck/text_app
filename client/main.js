@@ -1,8 +1,6 @@
 React = require('react');
-SocketUtil = require('./util/socket_util.js');
+TextsUtil = require('./util/texts_util.js');
 
+var NewConversation = React.createFactory(require('./components/conversations/new_conversation.jsx')); 
 
-
-var Test = React.createFactory(require('./components/test.jsx')); 
-
-React.render(Test(), document.getElementById('test'));
+React.render(NewConversation(), document.getElementById('newConversation'));

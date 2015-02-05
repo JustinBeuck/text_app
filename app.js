@@ -13,9 +13,9 @@ app.get('/', routes.index);
 
 io.on('connection', function(socket){
     console.log('a user connected');
-    socket.on('message', function(data) {
+    socket.on('send', function(data) {
         console.log("received data", data)
-        socket.emit('message', "hey dude")
+        socket.emit('receive', "hey dude")
     })
 });
 
