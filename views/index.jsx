@@ -4,7 +4,8 @@ var HelloMessage = React.createClass({
         return (
             <html>
                 <body>
-                    <div id="test">Hello {this.props.name}</div>
+                    <div id="test">Hello {this.props.replace}</div>
+                    <div>This will not be replaced: {this.props.keep}</div>
                 </body>
                 <script src="/public/js/main.js"></script>
             </html>

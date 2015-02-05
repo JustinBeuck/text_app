@@ -1,8 +1,13 @@
-var React = require('react')
+var Paragraph = require('./paragraph.jsx')
 
 var Test = React.createClass({
     render: function() {
-             return <div>This is the test Message</div> 
+        return(
+            <div>
+                This is the Test Component
+                <Paragraph pText="this is some text"/>
+            </div>
+        )
     }
 });
 

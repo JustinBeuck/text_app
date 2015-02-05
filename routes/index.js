@@ -1,3 +1,3 @@
 exports.index = function(req, res){
-      res.render('index', { name: 'Justin'  });
+      res.render('index', { replace: 'Justin', keep: 'Jake'  });
 };
