@@ -10,11 +10,9 @@ var TextsUtil = {
         })
     },
 
-    send: function (message) {
-        if (this.ready && message) {
-            this.socket.emit('send', {
-                message: message
-            });
+    send: function (text) {
+        if (this.ready && text) {
+            this.socket.emit('send', text);
         } else {
             console.log("Please init TextUtil")
         }

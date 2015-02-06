@@ -3,6 +3,9 @@ var HelloMessage = React.createClass({
     render: function() {
         return (
             <html>
+            <head>
+                <link rel="stylesheet" href="/public/css/styles.css" />  
+            </head>
                 <body>
                     <div id="newConversation"></div>
                 </body>

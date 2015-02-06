@@ -1,6 +1,8 @@
 React = require('react');
+_ = require('lodash');
+
 TextsUtil = require('./util/texts_util.js');
 
-var NewConversation = React.createFactory(require('./components/conversations/new_conversation.jsx')); 
+var ConversationBlock = React.createFactory(require('./components/conversations/conversation_block.jsx')); 
 
-React.render(NewConversation(), document.getElementById('newConversation'));
+React.render(ConversationBlock(), document.getElementById('newConversation'));

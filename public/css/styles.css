@@ -1,0 +1,4 @@
+.texts-block {
+  max-height: 100px;
+  overflow: scroll;
+}
